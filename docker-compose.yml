@@ -1,0 +1,16 @@
+services:
+  web:
+    image: nginx:1.27-alpine
+    container_name: kpi-labs-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./lab1:/usr/share/nginx/html/lab1:ro
+      - ./lab2:/usr/share/nginx/html/lab2:ro
+      - ./lab3:/usr/share/nginx/html/lab3:ro
+      - ./lab4:/usr/share/nginx/html/lab4:ro
+      - ./lab5:/usr/share/nginx/html/lab5:ro
+      - ./lab6:/usr/share/nginx/html/lab6:ro
+      - ./lab7:/usr/share/nginx/html/lab7:ro
+    restart: unless-stopped

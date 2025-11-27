@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карпатські вихідні - Карта</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body class="page page-map">
+    <div class="page-shell">
+      <div class="page-grid">
+        <header class="block block-1">
+          <div>
+            <h1>Карта маршруту</h1>
+            <p>Ключові точки вікенду: старт, оглядовий мис і місця ночівлі.</p>
+          </div>
+          <div class="block-x tag-box">
+            <h2>Шлях під рукою</h2>
+          </div>
+        </header>
+
+        <section class="block block-2">
+          <h3>Як читати карту</h3>
+          <p>
+            Натискайте на виділені ділянки, щоб перейти до сторінок із деталями про маршрути,
+            притулки або зоряні точки.
+          </p>
+          <ul>
+            <li>Зелені луки - комфортні стежки.</li>
+            <li>Білі плями - відкриті панорами.</li>
+            <li>Сині лінії - струмки з питною водою.</li>
+          </ul>
+        </section>
+
+        <main class="block block-3">
+          <div class="map-wrapper">
+            <img
+              src="assets/img/lab1-img008-land.jpg"
+              alt="Весняний альпійський пейзаж із полем та горами"
+              usemap="#loc-map"
+            />
+            <map name="loc-map" id="loc-map">
+              <area
+                shape="rect"
+                coords="320,520,700,880"
+                href="marshruty.html#polonyna"
+                alt="Перехід по полонинах"
+              />
+              <area
+                shape="rect"
+                coords="820,420,1200,760"
+                href="prytulky.html#refuges"
+                alt="Притулки та галявини"
+              />
+              <area
+                shape="rect"
+                coords="1300,360,1650,720"
+                href="galereya.html#night-sky"
+                alt="Нічне небо над хребтом"
+              />
+            </map>
+          </div>
+          <div class="note">
+            Координати адаптуються під ширину вікна. Якщо відкриваєте офлайн, збережіть усі
+            сторінки поруч із мапою.
+          </div>
+        </main>
+
+        <nav class="block block-4 menu">
+          <h3>Меню</h3>
+          <ul>
+            <li><a data-page="home" href="index.html">Головна</a></li>
+            <li><a data-page="routes" href="marshruty.html">Маршрути</a></li>
+            <li><a data-page="stay" href="prytulky.html">Притулки</a></li>
+            <li><a class="active" data-page="map" href="mapa.html">Карта</a></li>
+            <li><a data-page="gallery" href="galereya.html">Галерея</a></li>
+          </ul>
+        </nav>
+
+        <section class="block block-5">
+          <h3>Попередження</h3>
+          <ul>
+            <li>У грозу уникайте відкритих ділянок - перечекайте в лісі.</li>
+            <li>Не залишайте сміття ніде на маршруті.</li>
+            <li>Супроводжуйте новачків: темп і безпека важливіші за план.</li>
+          </ul>
+        </section>
+
+        <footer class="block block-6">
+          <div class="block-y tag-box">
+            <h2>Знай свій шлях</h2>
+          </div>
+          <p>
+            Перевіряйте прогноз, бережіть стежки та діліться координатами тільки з тими, хто
+            поважає гори. Мапа допоможе, якщо ви даєте їй шанс.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
