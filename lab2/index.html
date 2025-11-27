@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Карпатські вихідні - Flex</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
+  </head>
+  <body class="page">
+    <div class="shell">
+      <div class="variant-nav">
+        <a class="active" href="index.html">Flex</a>
+        <a href="grid.html">Grid</a>
+        <a href="classic.html">Без flex і grid</a>
+      </div>
+
+      <div class="layout layout-flex">
+        <header class="card block-1">
+          <div class="eyebrow">Карпатські вихідні</div>
+          <h1>Спокійний маршрут, верстка Flex</h1>
+          <p>Шапка зверху, тег праворуч, нижче ліві колонки й центральний блок ростуть разом з правою колонкою меню.</p>
+          <div class="badge tag-x">
+            <h2>Дихай високо</h2>
+          </div>
+        </header>
+
+        <div class="flex-stage">
+          <div class="flex-left">
+            <div class="flex-main-row">
+              <div class="stack-left">
+                <section class="card block-2">
+                  <h3>Темп, що не квапить</h3>
+                  <p>Плавні підйоми, вода поруч і ранкова кава на терасах лісу. Ставитись можна навіть першим походом.</p>
+                  <ul>
+                    <li>Довжина стежки: 18 км на два дні.</li>
+                    <li>Ночівля: притулок або намет на полонині.</li>
+                    <li>Вода: струмки кожні 3-4 км.</li>
+                  </ul>
+                </section>
+                <section class="card block-5">
+                  <h3>Дрібниці в дорогу</h3>
+                  <ol>
+                    <li>Легка мембрана й фліс.</li>
+                    <li>Налобний ліхтар і запас батарейок.</li>
+                    <li>Аптечка та пластир від натирань.</li>
+                  </ol>
+                </section>
+              </div>
+
+              <main class="card block-3">
+                <img class="hero" src="../lab1/assets/img/lab1-img001.jpg" alt="Карпатський краєвид з луками та горами" />
+                <p>
+                  Стартуємо з долини, де пахне сіном і смерекою. Далі полонина з ягідниками, стежка по гребеню,
+                  вечір біля вогню та зорі без міського світла.
+                </p>
+                <div class="meta-grid">
+                  <div class="meta-card">
+                    <strong>Коли їхати:</strong> травень-жовтень. Узимку маршрут стає лижним.
+                  </div>
+                  <div class="meta-card">
+                    <strong>Зв'язок:</strong> уривчастий. Попередьте рідних і збережіть трек офлайн.
+                  </div>
+                </div>
+              </main>
+            </div>
+
+            <section class="card block-6">
+              <div class="badge tag-y">
+                <h2>Ближче до неба</h2>
+              </div>
+              <p class="footer-copy">
+                Менше гулу міста, більше простору, води і сонця. Карпати дякують тим, хто йде повільно і дивиться по
+                сторонах.
+              </p>
+            </section>
+          </div>
+
+          <aside class="card block-4 menu" aria-label="Навігація">
+            <h3>Меню</h3>
+            <ul>
+              <li><a class="active" href="index.html">Головна (Flex)</a></li>
+              <li><a href="grid.html">Головна (Grid)</a></li>
+              <li><a href="classic.html">Головна (Класика)</a></li>
+              <li><a href="../lab1/marshruty.html">Маршрути</a></li>
+              <li><a href="../lab1/galereya.html">Галерея</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

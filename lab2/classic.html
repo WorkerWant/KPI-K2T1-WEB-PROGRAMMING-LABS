@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Карпатські вихідні - Класична верстка</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/classic.css" />
+  </head>
+  <body class="page">
+    <div class="shell">
+      <div class="variant-nav">
+        <a href="index.html">Flex</a>
+        <a href="grid.html">Grid</a>
+        <a class="active" href="classic.html">Без flex і grid</a>
+      </div>
+
+      <div class="layout layout-classic">
+        <header class="card block-1">
+          <div class="eyebrow">Карпатські вихідні</div>
+          <h1>Класика без flex і grid</h1>
+          <p>Float, inline-block і абсолютне позиціонування тримають макет у формі так само, як у старих збірках.</p>
+          <div class="badge tag-x">
+            <h2>Старі інструменти</h2>
+          </div>
+        </header>
+
+        <div class="classic-body">
+          <aside class="card block-4 menu" aria-label="Навігація">
+            <h3>Меню</h3>
+            <ul>
+              <li><a href="index.html">Головна (Flex)</a></li>
+              <li><a href="grid.html">Головна (Grid)</a></li>
+              <li><a class="active" href="classic.html">Головна (Класика)</a></li>
+              <li><a href="../lab1/marshruty.html">Маршрути</a></li>
+              <li><a href="../lab1/galereya.html">Галерея</a></li>
+            </ul>
+          </aside>
+
+          <div class="classic-main">
+            <div class="classic-left">
+              <section class="card block-2">
+                <h3>Темп, що не квапить</h3>
+                <p>Колонки стають поруч завдяки float. Текст не збігає під меню, бо зарезервовано місце праворуч.</p>
+                <ul>
+                  <li>Плавні набори висоти і вода поруч.</li>
+                  <li>Зупинки біля ялівцю і відкритих галявин.</li>
+                  <li>Можна йти навіть першим походом.</li>
+                </ul>
+              </section>
+
+              <section class="card block-5">
+                <h3>Що взяти</h3>
+                <ol>
+                  <li>Намет, килимок та теплий спальник.</li>
+                  <li>Дощовик і бахіли на мокрі ділянки.</li>
+                  <li>Мапа, компас та павербанк.</li>
+                </ol>
+              </section>
+            </div>
+
+            <main class="card block-3 classic-main-block">
+              <img class="hero" src="../lab1/assets/img/lab1-img005.jpeg" alt="Вид на карпатський хребет з сонячною долиною" />
+              <p>
+                Класична верстка вимагає точних відсотків і контролю перепливань. Але навіть без сучасних модулів можна
+                відтворити макет із правильними пропорціями.
+              </p>
+              <div class="meta-grid">
+                <div class="meta-card">
+                  <strong>Плюси:</strong> працює всюди, навіть у дуже старих браузерах.
+                </div>
+                <div class="meta-card">
+                  <strong>Мінуси:</strong> потребує ручного контролю за висотами та обтіканням.
+                </div>
+              </div>
+              <ol>
+                <li>Використовуємо float для колонок, задаємо відсотки ширини.</li>
+                <li>Заздалегідь закладаємо місце під праву колонку.</li>
+                <li>Переходимо на одноколонку в медіа-запиті.</li>
+              </ol>
+            </main>
+          </div>
+
+          <section class="card block-6">
+            <div class="badge tag-y">
+              <h2>Ближче до неба</h2>
+            </div>
+            <p class="footer-copy">
+              Навіть старі прийоми працюють, якщо планування продумане. У поході так само: головне продумати воду,
+              погоду і шлях додому.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

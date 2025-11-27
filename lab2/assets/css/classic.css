@@ -1,0 +1,107 @@
+.layout-classic {
+  display: block;
+}
+
+.classic-body {
+  position: relative;
+  padding-right: 28%;
+  overflow: hidden;
+}
+
+.block-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 26%;
+}
+
+.classic-main {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.classic-left {
+  float: left;
+  width: 28%;
+}
+
+.classic-left .block-2,
+.classic-left .block-5 {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.classic-main-block {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(72% - 14px);
+  margin-left: 14px;
+}
+
+.block-6 {
+  position: relative;
+  margin-top: 14px;
+  width: 100%;
+  clear: both;
+}
+
+.layout-classic .tag-x {
+  right: 18px;
+}
+
+.layout-classic .tag-y {
+  position: absolute;
+}
+
+.meta-grid .meta-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
+@media (max-width: 980px) {
+  .classic-body {
+    padding-right: 0;
+  }
+
+  .block-4 {
+    position: static;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .classic-main {
+    margin-top: 0;
+  }
+
+  .classic-left {
+    float: none;
+    width: 100%;
+  }
+
+  .classic-main-block {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .block-6 {
+    width: 100%;
+  }
+
+  .layout-classic .tag-x {
+    position: static;
+    margin-top: 8px;
+    align-self: flex-end;
+  }
+
+  .layout-classic .tag-y {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  .meta-grid .meta-card {
+    width: 100%;
+  }
+}

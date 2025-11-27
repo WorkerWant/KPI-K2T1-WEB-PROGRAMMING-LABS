@@ -6,6 +6,7 @@ services:
       - "8080:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./favicon.ico:/usr/share/nginx/html/favicon.ico:ro
       - ./lab1:/usr/share/nginx/html/lab1:ro
       - ./lab2:/usr/share/nginx/html/lab2:ro
       - ./lab3:/usr/share/nginx/html/lab3:ro

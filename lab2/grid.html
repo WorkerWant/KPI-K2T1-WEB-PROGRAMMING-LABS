@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Карпатські вихідні - Grid</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/grid.css" />
+  </head>
+  <body class="page">
+    <div class="shell">
+      <div class="variant-nav">
+        <a href="index.html">Flex</a>
+        <a class="active" href="grid.html">Grid</a>
+        <a href="classic.html">Без flex і grid</a>
+      </div>
+
+      <div class="layout layout-grid">
+        <header class="card block-1">
+          <div class="eyebrow">Карпатські вихідні</div>
+          <h1>Сітка тримає форму</h1>
+          <p>Усі блоки стають за клітинками макета: шапка зверху, праворуч довга колонка меню, в центрі основа.</p>
+          <div class="badge tag-x">
+            <h2>Структура вільно</h2>
+          </div>
+        </header>
+
+        <section class="card block-2">
+          <h3>Темп, що не квапить</h3>
+          <p>Схили м'які, підйоми плавні, вода поруч. Сітка тримає пропорції, навіть якщо тексту більше.</p>
+          <ul>
+            <li>День перший: підйом до полонини і вечеря біля колиби.</li>
+            <li>День другий: траверс з видами на сусідні хребти.</li>
+            <li>День третій: спуск у долину з кавою біля потоку.</li>
+          </ul>
+        </section>
+
+        <section class="card block-5">
+          <h3>Що взяти</h3>
+          <ol>
+            <li>Термос з чаєм і невелика аптечка.</li>
+            <li>Дощовик на випадок зливи в горах.</li>
+            <li>Налобний ліхтар з запасним елементом.</li>
+          </ol>
+        </section>
+
+        <main class="card block-3">
+          <img class="hero" src="../lab1/assets/img/lab1-img008-land.jpg" alt="Карпатські луки в тумані" />
+          <p>
+            Сітка підкреслює пропорції: ширший центр для історії і фото, вузькі колонки для корисних дрібниць. Все
+            лишається читабельним навіть на широких екранах.
+          </p>
+          <div class="meta-grid">
+            <div class="meta-card">
+              <strong>Осінь:</strong> трава золотіє, ночі холодніші, беремо теплий спальник.
+            </div>
+            <div class="meta-card">
+              <strong>Зима:</strong> стежка стає лижною, потрібні кішки і трекки.
+            </div>
+            <div class="meta-card">
+              <strong>Весна:</strong> багато води, треба бахіли для потоків.
+            </div>
+          </div>
+          <ol>
+            <li>Візуально відділяємо текст, щоб очі не стрибали.</li>
+            <li>Підтримуємо рівну ширину для головного блоку.</li>
+            <li>Меню стає окремою колонкою, не тисне на текст.</li>
+          </ol>
+        </main>
+
+        <aside class="card block-4 menu" aria-label="Навігація">
+          <h3>Меню</h3>
+          <ul>
+            <li><a href="index.html">Головна (Flex)</a></li>
+            <li><a class="active" href="grid.html">Головна (Grid)</a></li>
+            <li><a href="classic.html">Головна (Класика)</a></li>
+            <li><a href="../lab1/marshruty.html">Маршрути</a></li>
+            <li><a href="../lab1/galereya.html">Галерея</a></li>
+          </ul>
+        </aside>
+
+        <footer class="card block-6">
+          <div class="badge tag-y">
+            <h2>Ближче до неба</h2>
+          </div>
+          <p class="footer-copy">
+            Сітка допомагає тримати горизонталь, але головне лишається тим самим: тиша, вода, простір і теплий вогонь
+            біля притулку.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
