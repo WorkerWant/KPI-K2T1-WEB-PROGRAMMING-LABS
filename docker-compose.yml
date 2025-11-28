@@ -15,3 +15,14 @@ services:
       - ./lab6:/usr/share/nginx/html/lab6:ro
       - ./lab7:/usr/share/nginx/html/lab7:ro
     restart: unless-stopped
+
+  lab6-api:
+    image: golang:1.23-alpine
+    container_name: kpi-labs-go
+    working_dir: /app
+    volumes:
+      - ./lab6:/app
+    command: ["sh", "-c", "cd /app/api && go run server.go"]
+    ports:
+      - "8090:8090"
+    restart: unless-stopped

@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.5;color:#0e161b;background:#f6f7fb}
+.wrap{max-width:720px;margin:0 auto}
+.header{position:relative;background:#d9e7fb;border-bottom:1px solid #c3d6ef}
+.brand{padding:16px 16px 8px}
+.brand h1{margin:0;font-size:22px}
+.brand .sub{margin:2px 0 0 0;font-size:13px;opacity:.8}
+.badge{position:absolute;right:12px;top:12px;background:#fff;border:2px solid #a4b7d1;border-radius:8px;padding:6px 10px}
+.menu{overflow:auto;white-space:nowrap;padding:8px 8px 10px;background:#fff5ef;border-bottom:1px solid #ead9ce}
+.menu a{display:inline-block;margin:0 6px;padding:8px 10px;border-radius:999px;text-decoration:none;color:#0e161b;background:#fff;border:1px solid #e3e8ef}
+.menu a.active{background:#2e6cfd;color:#fff;border-color:#2e6cfd}
+.main{padding:16px;background:#fff}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;list-style:none;padding:0;margin:12px 0}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.cards li{background:#f7f9fc;border:1px solid #e5edf7;border-radius:12px;overflow:hidden}
+.cards img{display:block;width:100%;height:auto}
+.card-link{display:block;padding:10px 12px;text-decoration:none;color:#15498b;font-weight:600}
+.aside{padding:16px;background:#fdebdc;border-top:1px solid #ead9ce}
+.footer{position:relative;background:#d9e7fb;border-top:1px solid #c3d6ef;padding:14px 16px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.footer .badge{position:static;left:auto;top:auto;right:auto;margin:0}
+.footer a{color:#15498b}

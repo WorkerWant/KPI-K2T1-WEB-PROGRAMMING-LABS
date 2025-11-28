@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лаба 6 - Перша сторінка</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/accordion.css" />
+    <script src="assets/js/builder.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="brand">
+          <h1>Мандри Карпатами</h1>
+          <p class="sub">конструктор акордеона</p>
+        </div>
+        <div class="badge"><strong>План мандрів</strong></div>
+        <nav class="menu" aria-label="Меню">
+          <a class="active" href="#">Перша</a>
+          <a href="page2.html">Друга</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <h2>Акордеон</h2>
+        <div class="toolbar">
+          <button class="btn" id="add">Додати елемент</button>
+          <button class="btn" id="clear">Очистити</button>
+          <button class="btn primary" id="save">Зберегти на сервер</button>
+          <span id="status" class="status"></span>
+        </div>
+        <div id="list" class="list"></div>
+
+        <h3>Попередній перегляд</h3>
+        <div id="preview" class="acc"></div>
+      </main>
+
+      <aside class="aside">
+        <h2>Пояснення</h2>
+        <p>
+          Додайте елементи, заповніть заголовки та вміст. Натисніть «Зберегти на сервер». На другій сторінці дані будуть
+          завантажені та зібрані у функціонуючий акордеон.
+        </p>
+      </aside>
+
+      <footer class="footer">
+        <div class="badge">Разом до вершин</div>
+        <div class="footer-meta">
+          <span>© 2025 Мандри Карпатами</span>
+          <a href="page2.html">Перейти до другої</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
