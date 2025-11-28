@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Карпатські вихідні - JS взаємодія</title>
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body class="page">
+    <div class="shell">
+      <div class="page-grid">
+        <header class="card block-1 editable" data-block="1">
+          <div class="editable-body">
+            <h1>Карпатські вихідні</h1>
+            <p>
+              JS-версія головної: інтерактивні завдання, робота з cookie, localStorage та редагуванням блоків без
+              перезавантаження.
+            </p>
+            <div class="tag tag-x">Дихай високо</div>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="1" href="#">Редагувати блок 1</a>
+          </div>
+        </header>
+
+        <section class="card block-2 editable" data-block="2">
+          <div class="editable-body">
+            <h3>Темп, що не квапить</h3>
+            <p>Рухаємося без поспіху. На мобільному текст і списки займають всю ширину, не треба масштабувати.</p>
+            <ul>
+              <li>18 км за два дні з привалами біля води.</li>
+              <li>Легкі підйоми, без різких наборів висоти.</li>
+              <li>Ночівля в притулку або наметі на полонині.</li>
+            </ul>
+            <div class="color-control">
+              <label for="colorInput">Колір фону блока 2:</label>
+              <input id="colorInput" type="color" value="#f8e5d5" />
+            </div>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="2" href="#">Редагувати блок 2</a>
+          </div>
+        </section>
+
+        <main class="card block-3 editable" data-block="3">
+          <div class="editable-body">
+            <img class="hero" src="../lab1/assets/img/lab1-img003.jpg" alt="Карпатський ранок у горах" />
+            <p>
+              Контент повний, як у десктопній версії. Кнопки меню стають великими для пальців, текст не прилипає до країв,
+              а зображення адаптується до ширини.
+            </p>
+            <div class="meta-grid">
+              <div class="meta-card">
+                <strong>Зв'язок:</strong> уривчастий, збережіть трек офлайн.
+              </div>
+              <div class="meta-card">
+                <strong>Час:</strong> травень-жовтень найзручніші.
+              </div>
+            </div>
+            <ol>
+              <li>Ранок: стежка в лісі і панорама на вирубці.</li>
+              <li>День: полонини, ягідники, обід біля колиби.</li>
+              <li>Вечір: чай з чабрецем і зоряне небо.</li>
+            </ol>
+            <p class="area-result" data-area-result></p>
+            <section class="max-section" id="maxSection">
+              <h3>Максимальні значення</h3>
+              <form id="maxForm" class="max-form">
+                <p>Введіть 10 чисел, щоб визначити кількість максимумів.</p>
+                <div class="inputs">
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                  <input type="number" step="any" class="max-input" />
+                </div>
+                <button type="submit" class="btn">Обчислити</button>
+              </form>
+            </section>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="3" href="#">Редагувати блок 3</a>
+          </div>
+        </main>
+
+        <aside class="card block-4 menu editable" data-block="4" aria-label="Навігація">
+          <div class="editable-body">
+            <h3>Меню</h3>
+            <ul>
+              <li><a class="active" href="index.html">JS-головна</a></li>
+              <li><a href="../lab3/index.html">Мобільна (лаба 3)</a></li>
+              <li><a href="../lab4/index.html">Лаба 4</a></li>
+              <li><a href="../lab2/index.html">Головна Flex</a></li>
+              <li><a href="../lab2/grid.html">Головна Grid</a></li>
+              <li><a href="../lab2/classic.html">Головна Класика</a></li>
+              <li><a href="../lab1/marshruty.html">Маршрути</a></li>
+              <li><a href="../lab1/galereya.html">Галерея</a></li>
+            </ul>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="4" href="#">Редагувати блок 4</a>
+          </div>
+        </aside>
+
+        <section class="card block-5 editable" data-block="5">
+          <div class="editable-body">
+            <h3>Що взяти</h3>
+            <ol>
+              <li>Ліхтар, фліс, мембрану.</li>
+              <li>Термос з чаєм і перекус.</li>
+              <li>Паперову мапу з запасним виходом.</li>
+            </ol>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="5" href="#">Редагувати блок 5</a>
+          </div>
+        </section>
+
+        <footer class="card block-6 editable" data-block="6">
+          <div class="editable-body">
+            <div class="tag tag-y">Ближче до неба</div>
+            <p class="cta">Менше гулу міста, більше тиші та простору. Маршрут для тих, хто хоче відпочити без поспіху.</p>
+          </div>
+          <div class="edit-actions">
+            <a class="edit-link" data-block="6" href="#">Редагувати блок 6</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
