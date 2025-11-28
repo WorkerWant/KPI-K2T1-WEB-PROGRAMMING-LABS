@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8090/accordion";
+const API_URL = "/lab6/api/accordion";
 
 const listEl = document.getElementById("list");
 const previewEl = document.getElementById("preview");
