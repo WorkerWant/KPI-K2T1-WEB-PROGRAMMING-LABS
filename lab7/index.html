@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №7 - Підвищене навантаження</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <h1>Лабораторна робота №7</h1>
+        <p>Експерименти з підвищеним навантаженням: події потоком і пакетно</p>
+      </header>
+      <main class="grid">
+        <section class="card block block-1">
+          <div class="block-head">
+            <div>
+              <p class="eyebrow">Варіант 1</p>
+              <h2>Область work 60% x 80%</h2>
+            </div>
+            <span class="tag">x</span>
+          </div>
+          <p>Поле з’являється після натискання play. Анімація працює без фреймворків.</p>
+        </section>
+
+        <section class="card block block-2">
+          <h3>Ліва колона</h3>
+          <p>Керування у верхній частині work, кнопка close праворуч.</p>
+          <ul class="meta-list">
+            <li>anim: W(60%)-10px x H(80%)-50px</li>
+            <li>Рамка: 5px червона</li>
+            <li>Текстура: 32px x 32px</li>
+          </ul>
+        </section>
+
+        <section class="card block block-3">
+          <div class="block-head">
+            <div>
+              <h3>Блок керування</h3>
+              <p>Запускайте, зупиняйте, порівнюйте часи збереження</p>
+            </div>
+            <button id="play" class="btn primary">play</button>
+          </div>
+          <div class="actions">
+            <button id="resetLogs" class="btn">clear logs</button>
+            <span id="offset" class="hint"></span>
+          </div>
+          <div id="results" class="results" style="display: none">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Stream (сервер)</th>
+                    <th>Bulk (LocalStorage)</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+              </table>
+            </div>
+            <div class="stats">
+              <div>
+                <p class="stat-label">Початок stream</p>
+                <p id="stream-start" class="stat-value">-</p>
+              </div>
+              <div>
+                <p class="stat-label">Кінець stream</p>
+                <p id="stream-end" class="stat-value">-</p>
+              </div>
+              <div>
+                <p class="stat-label">Діапазон stream</p>
+                <p id="stream-span" class="stat-value">-</p>
+              </div>
+              <div>
+                <p class="stat-label">Початок bulk</p>
+                <p id="bulk-start" class="stat-value">-</p>
+              </div>
+              <div>
+                <p class="stat-label">Кінець bulk</p>
+                <p id="bulk-end" class="stat-value">-</p>
+              </div>
+              <div>
+                <p class="stat-label">Діапазон bulk</p>
+                <p id="bulk-span" class="stat-value">-</p>
+              </div>
+            </div>
+          </div>
+          <p id="summary" class="summary" style="display: none"></p>
+        </section>
+
+        <section class="card block block-4">
+          <h3>Права колона</h3>
+          <p>Права стінка anim прозора: коло вилітає, stop зникає, з’являється reload.</p>
+          <p>Повідомлення про всі події з’являються у controls зліва.</p>
+        </section>
+
+        <section class="card block block-5">
+          <h3>Підказки</h3>
+          <p>Таймінг кроків мінімальний для швидкого руху. Всі події з номером і часом.</p>
+        </section>
+
+        <section class="card block block-6">
+          <div class="block-head">
+            <h3>Нижній блок</h3>
+            <span class="tag">y</span>
+          </div>
+          <p>Після close показуються дані з LocalStorage і сервера для порівняння.</p>
+        </section>
+      </main>
+    </div>
+
+    <div id="work" class="work" aria-hidden="true">
+      <div class="sheet" role="dialog" aria-modal="true">
+        <div class="controls">
+          <div id="messages" class="messages"></div>
+          <div class="buttons">
+            <button id="start" class="btn primary">start</button>
+            <button id="stop" class="btn" style="display: none">stop</button>
+            <button id="reload" class="btn" style="display: none">reload</button>
+            <button id="close" class="btn">close</button>
+          </div>
+        </div>
+        <div class="anim">
+          <div id="field" class="field">
+            <div id="ball" class="ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -18,11 +18,22 @@ services:
 
   lab6-api:
     image: golang:1.23-alpine
-    container_name: kpi-labs-go
+    container_name: kpi-labs6-go
     working_dir: /app
     volumes:
       - ./lab6:/app
     command: ["sh", "-c", "cd /app/api && go run server.go"]
     ports:
       - "8090:8090"
+    restart: unless-stopped
+
+  lab7-api:
+    image: golang:1.23-alpine
+    container_name: kpi-labs7-go
+    working_dir: /app
+    volumes:
+      - ./lab7:/app
+    command: ["sh", "-c", "cd /app/api && go run server.go"]
+    ports:
+      - "8091:8091"
     restart: unless-stopped
