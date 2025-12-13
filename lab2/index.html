@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
-    <title>Карпатські вихідні - Flex</title>
-    <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/flex.css" />
+    <title>Карпатські вихідні - Flex</title>
   </head>
+
   <body class="page">
     <div class="shell">
-      <div class="variant-nav">
-        <a class="active" href="index.html">Flex</a>
-        <a href="grid.html">Grid</a>
-        <a href="classic.html">Без flex і grid</a>
-      </div>
+      <ul class="variant-navigation list">
+        <li><a class="active" href="index.html">Flex</a></li>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="classic.html">Без flex і grid</a></li>
+      </ul>
 
-      <div class="layout layout-flex">
-        <header class="card block-1">
-          <div class="eyebrow">Карпатські вихідні</div>
-          <h1>Спокійний маршрут, верстка Flex</h1>
-          <p>Шапка зверху, тег праворуч, нижче ліві колонки й центральний блок ростуть разом з правою колонкою меню.</p>
-          <div class="badge tag-x">
+      
+        <header class="card header">
+          <div>
+            <p class="eyebrow">Карпатські вихідні</p>
+            <h1>Спокійний маршрут, верстка Flex</h1>
+            <p>Шапка зверху, тег праворуч, нижче ліві колонки й центральний блок ростуть разом з правою колонкою меню.</p>
+          </div>
+          <div class="badge">
             <h2>Дихай високо</h2>
           </div>
         </header>
 
+      <div class="layout layout-flex">
         <div class="flex-stage">
           <div class="flex-left">
             <div class="flex-main-row">
@@ -55,7 +58,7 @@
                   Стартуємо з долини, де пахне сіном і смерекою. Далі полонина з ягідниками, стежка по гребеню,
                   вечір біля вогню та зорі без міського світла.
                 </p>
-                <div class="meta-grid">
+                <div class="meta-flex">
                   <div class="meta-card">
                     <strong>Коли їхати:</strong> травень-жовтень. Узимку маршрут стає лижним.
                   </div>
@@ -66,8 +69,8 @@
               </main>
             </div>
 
-            <section class="card block-6">
-              <div class="badge tag-y">
+            <section class="card footer">
+              <div class="badge">
                 <h2>Ближче до неба</h2>
               </div>
               <p class="footer-copy">

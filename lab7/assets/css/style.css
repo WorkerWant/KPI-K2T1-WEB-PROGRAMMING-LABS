@@ -7,12 +7,12 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantare
 .header p{margin:0;color:#4b5563}
 .grid{display:grid;grid-template-areas:"b1 b1 b1" "b2 b3 b4" "b5 b3 b4" "b6 b6 b4";grid-template-columns:1fr 1.4fr 1fr;gap:16px}
 .card{background:#fff;border:1px solid #e3e8ef;border-radius:10px;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
-.block-1{grid-area:b1;background:#dbeafe}
+.header{grid-area:b1;background:#dbeafe}
 .block-2{grid-area:b2;background:#f6e7da}
 .block-3{grid-area:b3}
 .block-4{grid-area:b4;background:#f6e7da}
 .block-5{grid-area:b5;background:#e7f0df}
-.block-6{grid-area:b6;background:#dbeafe}
+.footer{grid-area:b6;background:#dbeafe}
 .block h2,.block h3{margin:0 0 8px}
 .block p{margin:0 0 8px}
 .block-head{display:flex;align-items:center;justify-content:space-between;gap:12px}

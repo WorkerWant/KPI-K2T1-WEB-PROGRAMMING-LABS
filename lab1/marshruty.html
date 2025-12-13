@@ -6,24 +6,23 @@
     <link rel="icon" href="/favicon.ico" />
     <title>Карпатські вихідні - Маршрути</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js" defer></script>
   </head>
-  <body class="page page-routes">
-    <div class="page-shell">
-      <div class="page-grid">
-        <header class="block block-1">
-          <div>
-            <h1>Три дні без зайвих підйомів</h1>
-            <p>Добірка коротких стежок: максимум виду, мінімум перенавантаження.</p>
-          </div>
-          <div class="block-x tag-box">
-            <h2>На межі неба</h2>
-          </div>
-        </header>
 
+  <body class="page page-routes">
+    <header class="block header">
+      <div>
+        <h1>Три дні без зайвих підйомів</h1>
+        <p>Добірка коротких стежок: максимум виду, мінімум перенавантаження.</p>
+      </div>
+      <div class="tag-box">
+        <h2>На межі неба</h2>
+      </div>
+      </header>
+
+        <div class="page-grid">
         <section class="block block-2">
           <h3>Темп на кожен день</h3>
-          <ol>
+          <ol class="list">
             <li><strong>Пʼятниця:</strong> підйом лісом, вечеря біля притулку.</li>
             <li><strong>Субота:</strong> полонини та оглядовий відрізок уздовж гребеня.</li>
             <li><strong>Неділя:</strong> спуск іншим схилом до струмка й повернення.</li>
@@ -31,7 +30,7 @@
           <p>В кожному дні - запас часу на фото, чай і розмови.</p>
         </section>
 
-        <main class="block block-3" id="polonyna">
+        <section class="block block-3" id="polonyna">
           <img
             class="hero"
             src="assets/img/lab1-img002.jpg"
@@ -46,11 +45,11 @@
             <li>Доступні варіанти з коротшим спуском у разі дощу.</li>
             <li>GPS-трек та паперова карта - обовʼязково у рюкзаку.</li>
           </ul>
-        </main>
+        </section>
 
         <nav class="block block-4 menu">
           <h3>Меню</h3>
-          <ul>
+          <ul class="list">
             <li><a data-page="home" href="index.html">Головна</a></li>
             <li><a class="active" data-page="routes" href="marshruty.html">Маршрути</a></li>
             <li><a data-page="stay" href="prytulky.html">Притулки</a></li>
@@ -61,7 +60,7 @@
 
         <section class="block block-5">
           <h3>Дистанції</h3>
-          <ul>
+          <ul class="list">
             <li>Підйом до полонини - 380 м набору, 2:10 год.</li>
             <li>Гребінь до огляду - 120 м набору, 1:30 год.</li>
             <li>Спуск до струмка - 450 м скиду, 1:50 год.</li>
@@ -69,16 +68,17 @@
           <div class="note">Розрахунок зроблено для темпу 3–3.5 км/год.</div>
         </section>
 
-        <footer class="block block-6">
-          <div class="block-y tag-box">
+        <section class="block footer">
+          <div class="tag-box">
             <h2>Легкість кроку</h2>
           </div>
           <p>
             Навіть прості стежки дарують різні фарби: туман, сонце, аромат смереки. Плануйте
             так, щоб часом керувала цікавість, а не графік.
           </p>
-        </footer>
+        </section>
       </div>
-    </div>
+
+    <script src="assets/js/script.js" defer></script>
   </body>
 </html>

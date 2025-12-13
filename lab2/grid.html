@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
-    <title>Карпатські вихідні - Grid</title>
-    <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/grid.css" />
+    <title>Карпатські вихідні - Grid</title>
   </head>
+
   <body class="page">
     <div class="shell">
-      <div class="variant-nav">
-        <a href="index.html">Flex</a>
-        <a class="active" href="grid.html">Grid</a>
-        <a href="classic.html">Без flex і grid</a>
-      </div>
+      <ul class="variant-navigation list">
+        <li><a href="index.html">Flex</a></li>
+        <li><a class="active" href="grid.html">Grid</a></li>
+        <li><a href="classic.html">Без flex і grid</a></li>
+      </ul>
 
       <div class="layout layout-grid">
-        <header class="card block-1">
-          <div class="eyebrow">Карпатські вихідні</div>
+        <header class="card header">
+          <div>
+          <p class="eyebrow">Карпатські вихідні</p>
           <h1>Сітка тримає форму</h1>
           <p>Усі блоки стають за клітинками макета: шапка зверху, праворуч довга колонка меню, в центрі основа.</p>
-          <div class="badge tag-x">
+          </div>
+          <div class="badge">
             <h2>Структура вільно</h2>
           </div>
         </header>
@@ -80,15 +82,15 @@
           </ul>
         </aside>
 
-        <footer class="card block-6">
-          <div class="badge tag-y">
+        <section class="card footer">
+          <div class="badge">
             <h2>Ближче до неба</h2>
           </div>
           <p class="footer-copy">
             Сітка допомагає тримати горизонталь, але головне лишається тим самим: тиша, вода, простір і теплий вогонь
             біля притулку.
           </p>
-        </footer>
+        </section>
       </div>
     </div>
   </body>
