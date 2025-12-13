@@ -6,37 +6,32 @@
     <link rel="icon" href="/favicon.ico" />
     <title>Карпатські вихідні - Головна</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js" defer></script>
   </head>
   <body class="page page-home">
-    <div class="page-shell">
-      <div class="page-grid">
-        <header class="block block-1">
+     
+        <header class="block header">
           <div>
             <h1>Карпатські вихідні</h1>
             <p>Легкий триденний маршрут з видом на полонини, зоряні ночі та запах хвої.</p>
           </div>
-          <div class="block-x tag-box">
+          <div class="tag-box">
             <h2>Дихай високо</h2>
           </div>
         </header>
 
+      <main class="page-grid">
         <section class="block block-2">
           <h3>Темп, що не квапить</h3>
           <p>Маршрут підійде новачкам: без різких підйомів, з привалами біля води та ялівцю.</p>
-          <ul>
+          <ul class="list">
             <li>Довжина: ~18 км на два дні ходу.</li>
             <li>Ночівля: біля притулку або в наметі на полонині.</li>
             <li>Вода: струмки на кожні 3–4 км.</li>
           </ul>
         </section>
 
-        <main class="block block-3">
-          <img
-            class="hero"
-            src="assets/img/lab1-img001.jpg"
-            alt="Літній карпатський краєвид із луками та далекими горами"
-          />
+        <section class="block block-3">
+          <img class="hero-img" src="assets/img/lab1-img001.jpg" alt="Літній карпатський краєвид із луками та далекими горами" />
           <p>
             Стартуємо з ранкового туману в долині й піднімаємось до сонячних лук, де пахне
             ялівцем. Ввечері гріємось біля вогню, слухаємо тишу та дивимось на ближні гребені.
@@ -49,17 +44,17 @@
               <strong>Звʼязок:</strong> уривчастий. Попередьте рідних та збережіть трек офлайн.
             </div>
           </div>
-          <ol>
+          <ol class="list">
             <li>Ранок: прогулянка лісом до вирубки з панорамою.</li>
             <li>День: перехід полонинами та збір чорниць.</li>
             <li>Вечір: захід сонця й чай із чабрецем біля притулку.</li>
           </ol>
-        </main>
+        </section>
 
         <nav class="block block-4 menu">
           <h3>Меню</h3>
-          <ul>
-            <li><a class="active" data-page="home" href="index.html">Головна</a></li>
+          <ul class="list">
+            <li><a data-page="home" href="index.html">Головна</a></li>
             <li><a data-page="routes" href="marshruty.html">Маршрути</a></li>
             <li><a data-page="stay" href="prytulky.html">Притулки</a></li>
             <li><a data-page="map" href="mapa.html">Карта</a></li>
@@ -77,17 +72,18 @@
             <li>Мапу з нанесеним запасним маршрутом.</li>
           </ol>
         </section>
-
-        <footer class="block block-6">
-          <div class="block-y tag-box">
+      
+    <section class="block footer">
+          <div class="tag-box">
             <h2>Ближче до неба</h2>
           </div>
           <p>
             Нехай цей вікенд стане паузою: менше гулу міста, більше простору, води та сонця.
             Карпати винагороджують тих, хто йде повільно.
           </p>
-        </footer>
-      </div>
-    </div>
+        </section>
+      </main>
+
+      <script src="assets/js/script.js" defer></script>
   </body>
 </html>

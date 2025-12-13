@@ -6,28 +6,27 @@
     <link rel="icon" href="/favicon.ico" />
     <title>Карпатські вихідні - Карта</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js" defer></script>
   </head>
   <body class="page page-map">
-    <div class="page-shell">
-      <div class="page-grid">
-        <header class="block block-1">
+      
+        <header class="block header">
           <div>
             <h1>Карта маршруту</h1>
             <p>Ключові точки вікенду: старт, оглядовий мис і місця ночівлі.</p>
           </div>
-          <div class="block-x tag-box">
+          <div class="tag-box">
             <h2>Шлях під рукою</h2>
           </div>
         </header>
 
+      <main class="page-grid">
         <section class="block block-2">
           <h3>Як читати карту</h3>
           <p>
             Натискайте на виділені ділянки, щоб перейти до сторінок із деталями про маршрути,
             притулки або зоряні точки.
           </p>
-          <ul>
+          <ul class="list">
             <li>Зелені луки - комфортні стежки.</li>
             <li>Білі плями - відкриті панорами.</li>
             <li>Сині лінії - струмки з питною водою.</li>
@@ -70,7 +69,7 @@
 
         <nav class="block block-4 menu">
           <h3>Меню</h3>
-          <ul>
+          <ul class="list">
             <li><a data-page="home" href="index.html">Головна</a></li>
             <li><a data-page="routes" href="marshruty.html">Маршрути</a></li>
             <li><a data-page="stay" href="prytulky.html">Притулки</a></li>
@@ -88,16 +87,17 @@
           </ul>
         </section>
 
-        <footer class="block block-6">
-          <div class="block-y tag-box">
+        <section class="block footer">
+          <div class="tag-box">
             <h2>Знай свій шлях</h2>
           </div>
           <p>
             Перевіряйте прогноз, бережіть стежки та діліться координатами тільки з тими, хто
             поважає гори. Мапа допоможе, якщо ви даєте їй шанс.
           </p>
-        </footer>
-      </div>
-    </div>
+        </section>
+      </main>
+
+      <script src="assets/js/script.js" defer></script>
   </body>
 </html>

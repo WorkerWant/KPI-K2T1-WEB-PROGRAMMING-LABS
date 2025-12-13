@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <title>Карпатські вихідні - JS взаємодія</title>
-    <link rel="stylesheet" href="assets/css/mobile.css" />
-    <script src="assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="page">
     <div class="shell">
-      <div class="page-grid">
-        <header class="card block-1 editable" data-block="1">
-          <div class="editable-body">
-            <h1>Карпатські вихідні</h1>
-            <p>
-              JS-версія головної: інтерактивні завдання, робота з cookie, localStorage та редагуванням блоків без
-              перезавантаження.
-            </p>
-            <div class="tag tag-x">Дихай високо</div>
+      
+        <header class="card header editable" data-block="1">
+          <div class="editable-body span-container">
+            <span>
+              <h1>Карпатські вихідні</h1>
+              <p>
+                JS-версія головної: інтерактивні завдання, робота з cookie, localStorage та редагуванням блоків без
+                перезавантаження.
+              </p>
+            </span>
+          <div class="tag">Дихай високо</div>
           </div>
           <div class="edit-actions">
             <a class="edit-link" data-block="1" href="#">Редагувати блок 1</a>
           </div>
         </header>
 
+      <main class="page-grid">
         <section class="card block-2 editable" data-block="2">
           <div class="editable-body">
             <h3>Темп, що не квапить</h3>
@@ -123,16 +125,18 @@
           </div>
         </section>
 
-        <footer class="card block-6 editable" data-block="6">
+        <footer class="card footer editable" data-block="6">
           <div class="editable-body">
-            <div class="tag tag-y">Ближче до неба</div>
+            <div class="tag">Ближче до неба</div>
             <p class="cta">Менше гулу міста, більше тиші та простору. Маршрут для тих, хто хоче відпочити без поспіху.</p>
           </div>
           <div class="edit-actions">
             <a class="edit-link" data-block="6" href="#">Редагувати блок 6</a>
           </div>
         </footer>
-      </div>
+      </main>
     </div>
+
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>
