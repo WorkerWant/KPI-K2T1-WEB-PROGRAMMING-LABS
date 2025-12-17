@@ -22,6 +22,7 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -97,6 +98,7 @@ body {
   color: #eaf1ff;
   padding: 42px 0 64px 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .hero-grid {
@@ -224,6 +226,9 @@ main {
   }
 
   .device {
+    width: min(100%, 420px);
+    height: auto;
+    aspect-ratio: 520 / 320;
     justify-self: center;
     margin-top: 20px;
     transform: rotate(-12deg);
